@@ -1,0 +1,11 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#0b0d11;--surface:#13161c;--surface2:#1a1e27;--border:#252932;
+  --accent:#00e5a0;--accent2:#7c6fff;--text:#e8eaf0;--muted:#6b7385;
+  --tag-bg:#1a2630;--tag-color:#00c98a;
+  --font-head:'Syne',sans-serif;--font-mono:'JetBrains Mono',monospace;--font-body:'DM Sans',sans-serif;
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:16px;line-height:1.7;min-height:100vh}
