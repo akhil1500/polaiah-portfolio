@@ -1,6 +1,7 @@
 const profile = {
   name: "Polaiah Bodeddula",
   shortName: "Polaiah",
+  lastName: "Bodeddula",
   role: "Sr. Software Engineer",
   yearsOfExperience: "7+",
   avatar: "/src/assets/profile.jpg",
