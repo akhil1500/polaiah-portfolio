@@ -3,6 +3,7 @@ const profile = {
   shortName: "Polaiah",
   role: "Sr. Software Engineer",
   yearsOfExperience: "7+",
+  avatar: "/src/assets/profile.jpg",
   tagline: "Backend engineer specialising in Node.js, RESTful APIs, and distributed systems.",
   description:
     "I've built platforms serving lakhs of users — from government traffic systems to real-time chat at scale.",
@@ -30,7 +31,7 @@ const profile = {
     email: "akhilchandu108@gmail.com",
     phone: "+91 9502968503",
     github: "https://github.com/akhil1500",
-    portfolio: "https://akhil1500.github.io",
+    portfolio: "https://github.com/akhil1500/polaiah-portfolio",
     linkedIn: "https://www.linkedin.com/in/polaiah-bodeddula/"
   },
 };
