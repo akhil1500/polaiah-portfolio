@@ -279,8 +279,9 @@ hr.divider {
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 4rem;
+  gap: 2.5rem;
   align-items: center;
+  min-height: 0;
 }
 
 /* ── Eyebrow ── */
@@ -307,7 +308,7 @@ hr.divider {
 /* ── Name ── */
 .hero-name {
   font-family: var(--font-head);
-  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -376,14 +377,17 @@ hr.divider {
 /* ── Profile Photo ── */
 .hero-photo-wrapper {
   position: relative;
-  width: 280px;
-  height: 280px;
+  margin-top: 0;
+  align-self: center;
+  width: 220px;
+  height: 220px;
   flex-shrink: 0;
+  margin: 0;
 }
 
 .hero-photo-glow {
   position: absolute;
-  inset: -12px;
+  inset: -8px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(0, 229, 160, 0.18) 0%, transparent 70%);
   z-index: 0;
