@@ -7,13 +7,14 @@ export default function ExperienceItem({
     role,
     description,
     bullets=[],
-    tags=[]
+    tags=[],
+    isLast=false
 }) {
     return (
-        <div className="exp-item">
+        <div className={`exp-item ${isLast ? "exp-item--last": ""}`}>
             <div className="exp-meta">
                 <div className="exp-period">{period}</div>
-                <div className="exp-location">{location}</div>
+                <div className="exp-loc">{location}</div>
             </div>
             <div>
                 <div className="exp-company">{company}</div>

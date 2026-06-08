@@ -12,7 +12,7 @@ const projects = [
       "Led backend team and contributed to core feature architecture",
     ],
     tags: ["Node.js", "Socket.io", "MongoDB", "Razorpay"],
-    github: "https://github.com/akhil1500",
+    // github: "https://github.com/akhil1500",
     live: "",
   },
   {
@@ -27,7 +27,7 @@ const projects = [
       "Led backend team as Team Lead",
     ],
     tags: ["Node.js", "PostgreSQL", "AWS"],
-    github: "https://github.com/akhil1500",
+    // github: "https://github.com/akhil1500",
     live: "",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
       "Collaborated with frontend and QA for seamless delivery",
     ],
     tags: ["Node.js", "PostgreSQL", "REST APIs"],
-    github: "https://github.com/akhil1500",
+    // github: "https://github.com/akhil1500",
     live: "",
   },
   {
@@ -56,7 +56,7 @@ const projects = [
       "Implemented live chat, agent routing, notifications and analytics",
     ],
     tags: ["Node.js", "Wit.ai", "Socket.io", "MongoDB"],
-    github: "https://github.com/akhil1500",
+    // github: "https://github.com/akhil1500",
     live: "",
   },
 ];

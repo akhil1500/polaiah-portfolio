@@ -5,7 +5,8 @@ export default function ProjectCard({
     title,
     description,
     tags=[],
-    github
+    github,
+    live
 }) {
     return (
         <div className="project-card">
@@ -18,7 +19,7 @@ export default function ProjectCard({
                 ))}
             </div>
             {github && (
-                <a href="github" target="_blank" rel="noreferrer" className="project-link">
+                <a href={github} target="_blank" rel="noreferrer" className="project-link">
                     View on Github →
                 </a>
             )}

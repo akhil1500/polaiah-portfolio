@@ -2,7 +2,7 @@ import Tag from "./Tag";
 
 export default function SkillCard({icon, category, tags = []}) {
     return (
-        <div className="skills-card">
+        <div className="skill-card">
             <div className="skill-icon">{icon}</div>
             <div className="skill-cat">{category}</div>
             <div className="skill-tags">

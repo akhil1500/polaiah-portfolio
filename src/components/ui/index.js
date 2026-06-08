@@ -5,3 +5,4 @@ export { default as SkillCard } from "./SkillCard";
 export { default as ExperienceItem } from "./ExperienceItem";
 export { default as ProjectCard } from "./ProjectCard";
 export { default as AchievementCard } from "./AchievementCard";
+export { default as ContactLink } from "./ContactLink";

@@ -15,13 +15,21 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Achievements />
-      <Contact />
+      <main>
+        <Hero />
+        <hr className="divider" />
+        <About />
+        <hr className="divider" />
+        <Skills />
+        <hr className="divider" />
+        <Experience />
+        <hr className="divider" />
+        <Projects />
+        <hr className="divider" />
+        <Achievements />
+        <hr className="divider" />
+        <Contact />
+      </main>
       <Footer />
     </>
   )
