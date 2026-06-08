@@ -1,9 +1,16 @@
+import { getYearsOfExperience, getTotalExperience } from "../utils/experience";
+
+const careerStartDate = "2017-12-22";
+const yearsOfExperience = getYearsOfExperience(careerStartDate);
+const totalExperince = getTotalExperience(careerStartDate)
+
 const profile = {
   name: "Polaiah Bodeddula",
   shortName: "Polaiah",
   lastName: "Bodeddula",
   role: "Sr. Software Engineer",
-  yearsOfExperience: "7+",
+  careerStartDate: careerStartDate,
+  yearsOfExperience: `${yearsOfExperience}+`,
   avatar: "/src/assets/profile.jpg",
   tagline: "Backend engineer specialising in Node.js, RESTful APIs, and distributed systems.",
   description:
@@ -14,7 +21,7 @@ const profile = {
     "I've led backend teams, mentored freshers, done code reviews, and taken ownership of full product lifecycles from design to deployment.",
   ],
   stats: [
-    { num: "7", suffix: "+", label: "Years Experience" },
+    { num: yearsOfExperience, suffix: "+", label: "Years Experience" },
     { num: "6", suffix: "+", label: "Companies" },
     { num: "4L", suffix: "+", label: "Students on CNAPS" },
     { num: "24.5", suffix: "L", label: "Current CTC" },
@@ -22,7 +29,7 @@ const profile = {
   info: [
     { key: "Status", value: "Open to work" },
     { key: "Location", value: "Hyderabad, India" },
-    { key: "Experience", value: "7 yrs 4 months" },
+    { key: "Experience", value: totalExperince },
     { key: "Current Company", value: "IT People Corp" },
     { key: "Notice Period", value: "2 months" },
     { key: "Education", value: "B.Tech CSE · 8.1 CGPA" },
