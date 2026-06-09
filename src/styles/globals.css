@@ -957,7 +957,24 @@ hr.divider {
 @media (max-width: 680px) {
   .contact-box {
     grid-template-columns: 1fr;
-    padding: 2rem;
-    gap: 2rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .contact-links {
+    width: 100%;
+  }
+
+  .contact-link {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .contact-link-val {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
   }
 }

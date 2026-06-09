@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import profile from "../../data/profile";
+import { CONTACT_LABELS } from '../../data/constants'
 
 import { SectionLabel, ContactLink } from "../ui";
 
@@ -27,7 +28,7 @@ const contactLinks = [
     {
         id: 1,
         icon: "✉",
-        label: "Email",
+        label: CONTACT_LABELS.EMAIL,
         value: contact.email,
         href: `mailto:${contact.email}`,
         external: false
@@ -35,7 +36,7 @@ const contactLinks = [
     {
         id: 2,
         icon: "☎",
-        label: "Phone",
+        label: CONTACT_LABELS.PHONE,
         value: contact.phone,
         href: `tel:${contact.phone}`,
         external: false
@@ -43,20 +44,27 @@ const contactLinks = [
     {
         id: 3,
         icon: "</>",
-        label: "GitHub",
-        value: contact.github,
+        label: CONTACT_LABELS.GITHUB,
+        value: 'github.com/akhil1500',
         href: `${contact.github}`,
         external: true
     },
     {
         id: 4,
         icon: "in",
-        label: "LinkedIn",
-        value: contact.linkedIn,
+        label: CONTACT_LABELS.LINKEDIN,
+        value: 'polaiah-bodeddula',
         href: `${contact.linkedIn}`,
         external: true
     },
-
+    {
+        id: 5,
+        icon: "📄",
+        label: CONTACT_LABELS.RESUME,
+        value: 'Download PDF',
+        href: `${contact.resume}`,
+        external: true
+    }
 ]
 
 export default function Contact() {

@@ -1,4 +1,6 @@
+import { getTagColor } from "../../utils/tagColor";
 import Tag from "./Tag";
+
 
 export default function ProjectCard({
     num,
@@ -8,6 +10,7 @@ export default function ProjectCard({
     github,
     live
 }) {
+    const tagColors = getTagColor(tags.length);
     return (
         <div className="project-card">
             <div className="project-num">{num}</div>
@@ -15,7 +18,7 @@ export default function ProjectCard({
             <div className="project-desc">{description}</div>
             <div className="project-tags">
                 {tags.map((tag, idx) => (
-                    <Tag key={idx} label={tag} />
+                    <Tag key={idx} label={tag} color={tagColors[idx]} />
                 ))}
             </div>
             {github && (

@@ -40,7 +40,8 @@ const profile = {
     phone: "+91 9502968503",
     github: "https://github.com/akhil1500",
     portfolio: "https://github.com/akhil1500/polaiah-portfolio",
-    linkedIn: "https://www.linkedin.com/in/polaiah-bodeddula/"
+    linkedIn: "https://www.linkedin.com/in/polaiah-bodeddula/",
+    resume: "https://polaiah-assets.s3.ap-south-1.amazonaws.com/POLAIAH_BODEDDULA.pdf"
   },
 };
 

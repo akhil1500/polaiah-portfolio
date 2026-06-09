@@ -1,3 +1,4 @@
+import { getTagColor } from "../../utils/tagColor";
 import Tag from "./Tag";
 
 export default function ExperienceItem({
@@ -10,6 +11,7 @@ export default function ExperienceItem({
     tags=[],
     isLast=false
 }) {
+    const tagColors = getTagColor(tags.length);
     return (
         <div className={`exp-item ${isLast ? "exp-item--last": ""}`}>
             <div className="exp-meta">
@@ -27,7 +29,7 @@ export default function ExperienceItem({
                 </ul>
                 <div className="exp-tags">
                     {tags.map((tag, idx) => (
-                        <Tag key={idx} label={tag} />
+                        <Tag key={idx} label={tag} color={tagColors[idx]} />
                     ))}
                 </div>
             </div>

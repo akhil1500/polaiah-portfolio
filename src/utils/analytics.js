@@ -10,3 +10,7 @@ export const trackPageView = () => {
     page: window.location.pathname,
   });
 };
+
+export const trackEvent = (eventName, params = {}) => {
+    ReactGA.event(eventName, params);
+}
