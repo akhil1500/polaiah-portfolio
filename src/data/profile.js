@@ -16,24 +16,25 @@ const profile = {
   description:
     "I've built platforms serving lakhs of users — from government traffic systems to real-time chat at scale.",
   about: [
-    "I'm Polaiah, a Senior Software Engineer from Kadapa, AP — currently working at IT People Corporation India Pvt Ltd in Hyderabad. I build backend systems with Node.js, PostgreSQL, and cloud infrastructure.",
-    "Over 7+ years I've shipped production systems across government, edtech, fintech, and SaaS — including Bahrain's national traffic platform, a 4-lakh-student exam system, and a real-time conversational marketing platform.",
-    "I've led backend teams, mentored freshers, done code reviews, and taken ownership of full product lifecycles from design to deployment.",
+    "I'm Polaiah Bodeddula, a Senior Backend Engineer based in Hyderabad with 8+ years of experience building production-grade systems that scale.",
+    "I've worked across fintech, e-commerce, and SaaS domains — leading cross-functional teams, mentoring engineers, and owning systems from greenfield design through to production rollout",
+    "My work includes Bahrain's national traffic management platform, an online exam system serving 4 lakh+ students, and a real-time conversational marketing platform used by sales and support teams globally.",
+    "I care deeply about code quality, system observability, and building software that is maintainable long after I've shipped it.",
   ],
   stats: [
     { num: yearsOfExperience, suffix: "+", label: "Years Experience" },
-    { num: "6", suffix: "+", label: "Companies" },
+    { num: "4", suffix: "+", label: "Companies" },
+    { num: "10", suffix: "+", label: "Projects Delivered" },
     { num: "4L", suffix: "+", label: "Students on CNAPS" },
-    { num: "24.5", suffix: "L", label: "Current CTC" },
   ],
   info: [
     { key: "Status", value: "Open to work" },
     { key: "Location", value: "Hyderabad, India" },
     { key: "Experience", value: totalExperince },
     { key: "Current Company", value: "IT People Corp" },
-    { key: "Notice Period", value: "2 months" },
+    { key: "Work Mode", value: "On-site / Remote / Hybrid" },
+    { key: "Preferred Stack", value: "Javascript / Node.js / AWS" },
     { key: "Education", value: "B.Tech CSE · 8.1 CGPA" },
-    { key: "Languages", value: "English, Telugu" },
   ],
   contact: {
     email: "akhilchandu108@gmail.com",

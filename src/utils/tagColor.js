@@ -7,7 +7,7 @@ export const getTagColor = (totalCards = 0) => {
         const selectedColors = colors.slice(0,2);
 
         if (totalCards === 1) {
-            return selectedColors[0];
+            return [selectedColors[0]];
         }
 
         if (totalCards === 2) {
