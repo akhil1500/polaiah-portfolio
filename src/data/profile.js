@@ -9,6 +9,7 @@ const profile = {
   shortName: "Polaiah",
   lastName: "Bodeddula",
   role: "Sr. Software Engineer",
+  openToWork: false,
   careerStartDate: careerStartDate,
   yearsOfExperience: `${yearsOfExperience}+`,
   avatar: "/src/assets/profile.jpg",

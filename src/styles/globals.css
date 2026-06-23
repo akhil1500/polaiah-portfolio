@@ -319,6 +319,26 @@ hr.divider {
   color: var(--accent);
 }
 
+.avail-badge--closed {
+  background: #2a0d0d;
+  color: #f47373;
+  border: 1px solid #4d1a1a;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.avail-dot--closed {
+  width: 7px;
+  height: 7px;
+  background: #f47373;
+  border-radius: 50%;
+}
+
 /* ── Title ── */
 .hero-title {
   font-family: var(--font-head);

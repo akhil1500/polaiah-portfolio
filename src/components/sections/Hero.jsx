@@ -54,7 +54,10 @@ export default function Hero() {
                     animate="visible"
                 >
                     <motion.div className="hero-eyebrow" variants={itemVariants}>
-                        Open to new opportunities
+                        { profile.openToWork ?
+                            'Open to new opportunities' :
+                            'Not actively looking'
+                        }
                     </motion.div>
 
                     <motion.h1 className="hero-name" variants={itemVariants}>

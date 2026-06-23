@@ -55,10 +55,17 @@ export default function About() {
                             {/* Availability badge row */}
                             <div className="info-row">
                                 <span className="info-key">Status</span>
-                                <span className="avail-badge">
-                                <span className="avail-dot" />
-                                Open to work
-                                </span>
+                                {profile.openToWork ? (
+                                    <span className="avail-badge">
+                                    <span className="avail-dot" />
+                                    Open to work
+                                    </span>
+                                ) : (
+                                    <span className="avail-badge--closed">
+                                    <span className="avail-dot--closed" />
+                                    Not available
+                                    </span>
+                                )}
                             </div>
 
                             {/* Remaining info rows */}
