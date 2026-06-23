@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useScrollSpy from "../../hooks/useScrollSpy";
 import profile from "../../data/profile";
+import { Link, useLocation } from "react-router-dom";
 
 const NAV_LINKS = [
     { label: "about",       href: "#about" },
@@ -16,6 +17,8 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const activeSection  = useScrollSpy(SECTION_IDS);
+    const location = useLocation();
+    const isHome = location.pathname === '/';
 
     useEffect(() =>{
         const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -32,19 +35,25 @@ export default function Navbar() {
         <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
             <div className="nav-inner">
                 {/**Logo */}
-                <a href="#" className="logo">$ ~/polaiah</a>
+                <Link to="/" className="logo">$ ~/polaiah</Link>
                 {/** Desktop Links */}
                 <ul className="nav-links">
-                    {NAV_LINKS.map((link) => (
-                        <li key={link.href}>
-                            <a
-                                href={link.href}
-                                className={`nav-link ${activeSection === link.href.replace("#", "") ? "nav-link--active" : ""}`}
-                            >
-                                {link.label}
-                            </a>
+                    {isHome ? (
+                        NAV_LINKS.map((link) => (
+                            <li key={link.href}>
+                                <a
+                                    href={link.href}
+                                    className={`nav-link ${activeSection === link.href.replace("#", "") ? "nav-link--active" : ""}`}
+                                >
+                                    {link.label}
+                                </a>
+                            </li>
+                        ))
+                    ) : (
+                        <li>
+                            <Link to="/" className="nav-link">← home</Link>
                         </li>
-                    ))}
+                    )}
                 </ul>
                 
                 {/**CTA */}
@@ -67,16 +76,20 @@ export default function Navbar() {
             {/** Mobile Menu */}
             {menuOpen && (
                 <div className="nav-mobile-menu">
-                    {NAV_LINKS.map((link) => (
-                        <a
-                            key={link.href}
-                            href={link.href}
-                            className={`nav-mobile-link ${activeSection === link.href.replace("#", "") ? "nav-link--active" : ""}`}
-                            onClick={handleLinkClick}
-                        >
-                            {link.label}
-                        </a>
-                    ))}
+                    {isHome ? (
+                        NAV_LINKS.map((link) => (
+                            <a
+                                key={link.href}
+                                href={link.href}
+                                className={`nav-mobile-link ${activeSection === link.href.replace("#", "") ? "nav-link--active" : ""}`}
+                                onClick={handleLinkClick}
+                            >
+                                {link.label}
+                            </a>
+                        ))
+                    ) : (
+                        <Link to="/" className="nav-mobile-link">← home</Link>
+                    )}
                 </div>
             )}
             <a 

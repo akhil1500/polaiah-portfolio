@@ -14,6 +14,8 @@ const projects = [
     tags: ["Node.js", "Socket.io", "MongoDB", "Razorpay"],
     // github: "https://github.com/akhil1500",
     live: "",
+    type: "professional",
+    featured: true,
   },
   {
     id: 2,
@@ -29,6 +31,8 @@ const projects = [
     tags: ["Node.js", "PostgreSQL", "AWS"],
     // github: "https://github.com/akhil1500",
     live: "",
+    type: "professional",
+    featured: true,
   },
   {
     id: 3,
@@ -44,6 +48,8 @@ const projects = [
     tags: ["Node.js", "PostgreSQL", "REST APIs"],
     // github: "https://github.com/akhil1500",
     live: "",
+    type: "professional",
+    featured: true,
   },
   {
     id: 4,
@@ -58,7 +64,25 @@ const projects = [
     tags: ["Node.js", "Wit.ai", "Socket.io", "MongoDB"],
     // github: "https://github.com/akhil1500",
     live: "",
+    type: "professional",
+    featured: true,
   },
+  {
+      id: 5,
+      num: "05",
+      title: "polaiah.dev – Personal Portfolio",
+      description:
+        "This portfolio website — built with React.js and deployed on AWS S3 + CloudFront with a custom domain. Includes Google Analytics, event tracking, and automated deployment pipeline.",
+      bullets: [
+        "Built with React.js, Framer Motion, and custom CSS",
+        "Deployed on AWS S3 + CloudFront with custom domain polaiah.dev",
+        "Automated deployment via AWS CLI",
+        "Google Analytics with custom event tracking",
+      ],
+      tags: ["React.js", "AWS", "CloudFront", "S3"],
+      type: "personal",
+      featured: false,
+    },
 ];
 
 export default projects;

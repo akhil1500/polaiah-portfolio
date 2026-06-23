@@ -43,15 +43,16 @@ const photoVariants = {
 export default function Hero() {
     return(
         <section className="hero" id="hero">
-            <div className="hero-inner">
+            <motion.div className="hero-inner"
+                initial="hidden"
+                animate="visible"
+            >
 
                 {/**Left: Text Content */}
     
                 <motion.div
                     className="hero-content"
                     variants={containerVariants}
-                    initial="hidden"
-                    animate="visible"
                 >
                     <motion.div className="hero-eyebrow" variants={itemVariants}>
                         { profile.openToWork ?
@@ -96,8 +97,6 @@ export default function Hero() {
                 <motion.div
                     className="hero-photo-wrapper"
                     variants={photoVariants}
-                    initial="hidden"
-                    animate="visible"
                 >
                     <div className="hero-photo-glow" />
                     <img
@@ -106,7 +105,7 @@ export default function Hero() {
                         className="hero-photo"
                     />
                 </motion.div>
-            </div>
+            </motion.div>
         </section>
     )
 }

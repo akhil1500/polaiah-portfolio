@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import projects from "../../data/projects";
 
 import { ProjectCard, SectionLabel } from "../ui";
+import { useNavigate } from "react-router-dom";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -22,6 +23,9 @@ const itemVariants = {
 };
 
 export default function Projects() {
+    const navigate = useNavigate();
+    const featuredProjects = projects.filter((p) => p.featured);
+
     return (
         <section className="section" id="projects">
             <motion.div
@@ -36,7 +40,7 @@ export default function Projects() {
                 </motion.div>
 
                 <div className="projects-grid">
-                    {projects.map((project)  => (
+                    {featuredProjects.map((project)  => (
                         <motion.div
                             key={project.id}
                             variants={itemVariants}
@@ -54,6 +58,14 @@ export default function Projects() {
                         </motion.div>
                     ))}
                 </div>
+                <motion.div variants={itemVariants} className="projects-view-all">
+                    <button
+                        className="btn-view-all"
+                        onClick={() => navigate("/projects")}
+                    >
+                        View All Projects →
+                    </button>
+                </motion.div>
             </motion.div>
         </section>
     )

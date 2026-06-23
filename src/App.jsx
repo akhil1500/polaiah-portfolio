@@ -1,38 +1,33 @@
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/layout/Navbar";
-
-import Hero from "./components/sections/Hero";
-import About from "./components/sections/About";
-import Skills from "./components/sections/Skills";
-import Experience from "./components/sections/Experience";
-import Projects from "./components/sections/Projects";
-import Achievements from "./components/sections/Achievements";
-import Contact from "./components/sections/Contact";
-
 import Footer from "./components/layout/Footer";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
-function App() {
+const AnimatedRoutes = () => {
+  const location = useLocation();
 
   return (
-    <>
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
+function App() {
+  return (
+    <BrowserRouter>
       <Navbar />
       <main>
-        <Hero />
-        <hr className="divider" />
-        <About />
-        <hr className="divider" />
-        <Skills />
-        <hr className="divider" />
-        <Experience />
-        <hr className="divider" />
-        <Projects />
-        <hr className="divider" />
-        <Achievements />
-        <hr className="divider" />
-        <Contact />
+        <AnimatedRoutes />
       </main>
       <Footer />
-    </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
