@@ -4,9 +4,21 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import profile from "./data/profile";
+import { useEffect } from "react";
+
+const pageTitles = {
+  "/": `${profile.name} | ${profile.role}`,
+  "/projects": `Projects | ${profile.name},`
+}
 
 const AnimatedRoutes = () => {
   const location = useLocation();
+
+  useEffect(() =>{
+    document.title = pageTitles[location.pathname] ||
+      "Polaiah Bodeddula | Senior Software Engineer";
+  }, [location.pathname])
 
   return (
     <AnimatePresence mode="wait">

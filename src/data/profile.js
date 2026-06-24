@@ -8,7 +8,7 @@ const profile = {
   name: "Polaiah Bodeddula",
   shortName: "Polaiah",
   lastName: "Bodeddula",
-  role: "Sr. Software Engineer",
+  role: "Senior Software Engineer",
   openToWork: false,
   careerStartDate: careerStartDate,
   yearsOfExperience: `${yearsOfExperience}+`,
